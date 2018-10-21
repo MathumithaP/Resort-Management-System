@@ -1,0 +1,396 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{79BE3EC6-A91E-4D88-8BFC-A4A929F76607}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>resortnet.My.MyApplication</StartupObject>
+    <RootNamespace>resortnet</RootNamespace>
+    <AssemblyName>resortnet</AssemblyName>
+    <MyType>WindowsForms</MyType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>resortnet.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>resortnet.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="adodb, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Enterprise.Framework, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Enterprise.InfoStore, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Windows\assembly\GAC_MSIL\System.Web.Services\2.0.0.0__b03f5f7f11d50a3a\System.Web.Services.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="breakfast.Designer.vb">
+      <DependentUpon>breakfast.vb</DependentUpon>
+    </Compile>
+    <Compile Include="breakfast.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="changepass.Designer.vb">
+      <DependentUpon>changepass.vb</DependentUpon>
+    </Compile>
+    <Compile Include="changepass.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="charge.Designer.vb">
+      <DependentUpon>charge.vb</DependentUpon>
+    </Compile>
+    <Compile Include="charge.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CrystalReport1.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReport2.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dinner.Designer.vb">
+      <DependentUpon>dinner.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dinner.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="editcheckin.Designer.vb">
+      <DependentUpon>editcheckin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="editcheckin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="employee.Designer.vb">
+      <DependentUpon>employee.vb</DependentUpon>
+    </Compile>
+    <Compile Include="employee.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="empsalaryreport.Designer.vb">
+      <DependentUpon>empsalaryreport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="empsalaryreport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="guestcheckin.Designer.vb">
+      <DependentUpon>guestcheckin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="guestcheckin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="guestcheckout.Designer.vb">
+      <DependentUpon>guestcheckout.vb</DependentUpon>
+    </Compile>
+    <Compile Include="guestcheckout.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="guestpayment.Designer.vb">
+      <DependentUpon>guestpayment.vb</DependentUpon>
+    </Compile>
+    <Compile Include="guestpayment.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="home.Designer.vb">
+      <DependentUpon>home.vb</DependentUpon>
+    </Compile>
+    <Compile Include="home.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login.Designer.vb">
+      <DependentUpon>login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lunch.Designer.vb">
+      <DependentUpon>lunch.vb</DependentUpon>
+    </Compile>
+    <Compile Include="lunch.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="paymentreport.Designer.vb">
+      <DependentUpon>paymentreport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="paymentreport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="roomcharge.Designer.vb">
+      <DependentUpon>roomcharge.vb</DependentUpon>
+    </Compile>
+    <Compile Include="roomcharge.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="salary.Designer.vb">
+      <DependentUpon>salary.vb</DependentUpon>
+    </Compile>
+    <Compile Include="salary.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="searchcheckin.Designer.vb">
+      <DependentUpon>searchcheckin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="searchcheckin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="searchcheckout.Designer.vb">
+      <DependentUpon>searchcheckout.vb</DependentUpon>
+    </Compile>
+    <Compile Include="searchcheckout.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="status.Designer.vb">
+      <DependentUpon>status.vb</DependentUpon>
+    </Compile>
+    <Compile Include="status.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="status1.Designer.vb">
+      <DependentUpon>status1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="status1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="breakfast.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>breakfast.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="changepass.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>changepass.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="charge.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>charge.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport1.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport2.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dinner.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>dinner.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="editcheckin.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>editcheckin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="employee.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>employee.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="empsalaryreport.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>empsalaryreport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="guestcheckin.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>guestcheckin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="guestcheckout.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>guestcheckout.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="guestpayment.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>guestpayment.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="home.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>home.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="lunch.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>lunch.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="paymentreport.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>paymentreport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="roomcharge.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>roomcharge.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="salary.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>salary.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="searchcheckin.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>searchcheckin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="searchcheckout.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>searchcheckout.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="status.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>status.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="status1.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>status1.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\outer-view.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\Cotswold-Lodge-Classic-Hotel-photos-Room-Deluxe-King-Room %281%29.JPEG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\olasiti-lodge-double-room-800.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\s5.JPEG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\s7.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\log.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\13.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\14.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\15.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\22.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\24.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\21.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\25.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
